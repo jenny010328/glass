@@ -1,6 +1,8 @@
 @import "setting/variable";
 @import "setting/reset";
 @import "setting/base";
-//page
-@import "pages/index";
-@import "pages/optical";
+@import "setting/header";
+@import "setting/footer";
+//
+@import "index";
+@import "optical";
