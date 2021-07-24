@@ -138,19 +138,28 @@
   }
 }
 
-.previous,.next{
-  font-size: 19px;
-  line-height: 1.5;
-  a{
-    padding: 12px 12px;
-    &:hover{
-      background-color: $page;
-      color: black;
-    }
-    @include mobile{
-      font-size: 16px;
-      line-height: 1.5;
-      padding: 10px 12px;
+.page_num li {
+  .previous,.next{
+    font-size: 19px;
+    line-height: 1.5;
+    a{
+      padding: 12px 12px;
+      
+      @include mobile{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px 12px;
+      }
     }
   }
 }
+
+.pageBtn{
+  background-color: $page;
+  color: black;
+  &:hover{
+    background-color: $page ;
+    color: black ;
+  }
+}
+
