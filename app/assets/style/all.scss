@@ -1,11 +1,5 @@
-@import "variable";
-@import "reset";
-@import "base";
-@import "header";
-@import "banner";
-@import "intro";
-@import "classic-series";
-@import "joint-design";
-@import "recommend";
-@import "contact";
-@import "footer";
+@import "setting/variable";
+@import "setting/reset";
+@import "setting/base";
+//page
+@import "all/pages/index";
