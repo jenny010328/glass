@@ -781,7 +781,6 @@ hr {
             justify-content: center;
     border: solid 1px #DCDCDC;
     width: 100%;
-    padding: 26.5px 0;
     cursor: pointer; }
     @media (max-width: 768px) {
       .nav li {
@@ -805,15 +804,17 @@ hr {
       height: 14px;
       margin-right: 2px; } }
 
-.nav h3 {
+.nav h3 a {
   font-size: 32px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  padding: 26.5px 0;
+  color: #000; }
   @media (max-width: 768px) {
-    .nav h3 {
+    .nav h3 a {
       font-size: 24px;
       line-height: 50px; } }
   @media (max-width: 376px) {
-    .nav h3 {
+    .nav h3 a {
       font-size: 14px;
       line-height: 1; } }
 
