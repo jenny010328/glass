@@ -22,7 +22,7 @@
   img{
     max-width:100%;
     height: auto;
-    vertical-align: center;
+    display: block;
   }
   p{
     font-size: 16px;
@@ -31,7 +31,7 @@
   h2{
     text-align: center;
     font-size: 48px;
-    line-height: 72px;
+    line-height: 1.5;
     font-weight: bold;
     color: $secondary;
     margin-bottom: 48px;
@@ -108,3 +108,4 @@
         }
     }
     
+

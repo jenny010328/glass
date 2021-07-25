@@ -75,8 +75,10 @@
           @include mobile{
           font-size: 16px;
           }
+          // 疑問: 不知道為何這裡hover用#AA06010D這個顏色顯示不出來
+          // 我的變數設: $tertiary
           &:hover{
-          color: $secondary;
+          color: lighten($primary,50%);
           }
           img{
               @include size(36px,36px);
@@ -145,7 +147,7 @@
     a{
       margin-left: 24px;
       &:hover{
-        color: $secondary;
+        color: lighten($primary,50%);
       }
       @include mobile{
         margin: 0;
