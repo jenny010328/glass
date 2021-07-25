@@ -816,16 +816,19 @@ hr {
           align-items: center;
   font-size: 32px;
   line-height: 1.5;
-  padding: 26.5px;
-  color: #000; }
-  @media (max-width: 768px) {
-    .nav li a {
-      font-size: 24px;
-      line-height: 50px; } }
-  @media (max-width: 376px) {
-    .nav li a {
-      font-size: 14px;
-      line-height: 1; } }
+  padding: 26.5px; }
+  .nav li a h3 {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #000; }
+    @media (max-width: 768px) {
+      .nav li a h3 {
+        font-size: 24px;
+        line-height: 50px; } }
+    @media (max-width: 376px) {
+      .nav li a h3 {
+        font-size: 14px;
+        line-height: 1; } }
 
 .product-p1 {
   display: -webkit-box;
