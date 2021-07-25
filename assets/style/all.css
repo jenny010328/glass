@@ -780,8 +780,7 @@ hr {
         -ms-flex-pack: center;
             justify-content: center;
     border: solid 1px #DCDCDC;
-    width: 100%;
-    cursor: pointer; }
+    width: 100%; }
     @media (max-width: 768px) {
       .nav li {
         padding: 15px 0; } }
@@ -804,17 +803,27 @@ hr {
       height: 14px;
       margin-right: 2px; } }
 
-.nav h3 a {
+.nav li a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 32px;
   line-height: 1.5;
-  padding: 26.5px 0;
+  padding: 26.5px;
   color: #000; }
   @media (max-width: 768px) {
-    .nav h3 a {
+    .nav li a {
       font-size: 24px;
       line-height: 50px; } }
   @media (max-width: 376px) {
-    .nav h3 a {
+    .nav li a {
       font-size: 14px;
       line-height: 1; } }
 
