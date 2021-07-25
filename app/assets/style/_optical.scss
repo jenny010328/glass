@@ -43,7 +43,8 @@
     }
 }
 
-.nav h3{
+.nav h3 a{
+    color: black;
     font-size: 32px;
     line-height: 1.5;
     @include pad{
