@@ -485,7 +485,8 @@ hr {
       .intro .service li img {
         width: 84px;
         height: 84px;
-        margin-bottom: 24px; }
+        margin-bottom: 24px;
+        margin: 0 auto; }
       .intro .service li h3 {
         font-size: 24px;
         line-height: 1.5;
