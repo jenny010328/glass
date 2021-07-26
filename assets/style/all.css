@@ -485,8 +485,8 @@ hr {
       .intro .service li img {
         width: 84px;
         height: 84px;
-        margin-bottom: 24px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        margin-bottom: 24px; }
       .intro .service li h3 {
         font-size: 24px;
         line-height: 1.5;
@@ -814,19 +814,23 @@ hr {
   padding: 26.5px; }
   @media (max-width: 768px) {
     .nav li a {
-      font-size: 24px;
-      line-height: 50px;
       padding: 15px 0; } }
   @media (max-width: 414px) {
     .nav li a {
-      font-size: 14px;
-      line-height: 1;
       padding: 0px;
       padding: 6px 0; } }
   .nav li a h3 {
     font-size: 32px;
     line-height: 1.5;
     color: #000; }
+    @media (max-width: 768px) {
+      .nav li a h3 {
+        font-size: 24px;
+        line-height: 50px; } }
+    @media (max-width: 414px) {
+      .nav li a h3 {
+        font-size: 14px;
+        line-height: 1; } }
 
 .active {
   border-bottom: 8px solid #AA0601 !important; }
