@@ -1024,24 +1024,24 @@ hr {
       line-height: 1.5;
       padding: 9px 19px; }
 
-.infoMap {
+.infostore {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (max-width: 768px) {
-    .infoMap {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+    .infostore {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
 
 .siteCard {
-  width: 30%;
+  width: 31.5%;
   margin-right: 30px;
   margin-bottom: 32px; }
+  .siteCard:nth-child(3n+3) {
+    margin-right: 0; }
   .siteCard:nth-last-child(1), .siteCard:nth-last-child(2) {
     margin-bottom: 0; }
   @media (max-width: 768px) {
@@ -1064,12 +1064,7 @@ hr {
         height: auto; } }
     @media (max-width: 414px) {
       .siteCard img {
-        width: 100%;
         margin-right: 0; } }
-
-@media (max-width: 768px) {
-  .sitecardBody {
-    width: 100%; } }
 
 .sitecardBody h3 {
   font-size: 24px;
@@ -1105,7 +1100,6 @@ hr {
     width: 18px;
     height: 18px; }
   .sitecardBody a p {
-    width: 100%;
     font-size: 20px;
     line-height: 30px; }
     @media (max-width: 768px) {
