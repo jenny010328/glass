@@ -80,6 +80,7 @@
         img{
           @include size(84px,84px);
           margin-bottom: 24px;
+          margin: 0 auto;
         }
         h3{
           font-size: 24px;
