@@ -121,6 +121,7 @@
     padding: 16px 24px;
   }
   li{
+    // width: 100%;
     &:nth-child(1),&:nth-child(2){
       margin-bottom: 8px;  
     }
@@ -136,6 +137,7 @@
     @include size(18px,18px);
       }
   p{
+    width: 100%;
    font-size: 20px;
     line-height: 30px; 
     @include pad{
@@ -148,10 +150,22 @@
 .googleMap {
   overflow: hidden;
    iframe{
+     @include size(670px,456px);
      display:block;
+     @include pad{
+       @include size(670px,422px);
+     }
+     @include mobile{
+       @include size(670px,211px);
+     }
   }
 }
 
 
 
  
+  
+  
+
+
+        
