@@ -9,3 +9,236 @@
       padding: 28px 15px 56px 15px;
     }
   }
+
+  .Title{
+    border-left: 8px solid $primary;
+    padding-left: 16px;
+    margin-bottom: 60px;
+    @include pad{
+      border-left: 4px solid $primary;
+      margin-bottom: 40px;
+    }
+    @include mobile{
+      margin-bottom: 24px;
+    }
+    h2{
+      width: 192px;
+      font-size: 48px;
+      line-height: 80px;
+      color:#495057;
+    }
+  }
+
+  .nav{
+    display: flex;
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content: center;
+    // position: sticky
+    background-color: #fff;
+    // top:109px
+    @include pad{
+      padding: 0 39px;
+    }
+    @include mobile{
+      // top:159px
+      padding: 0 15px;
+    }
+    li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid 1px $light-gray;
+      width: 100%;
+    }
+  }
+  
+  .nav img{
+      @include size(44px,44px);
+      margin-right: 10px;
+      @include pad{
+        @include size(29px,29px);
+        margin-right: 9px;
+      }
+      @include mobile{
+        @include size(14px,14px);
+        margin-right: 2px;
+      }
+  }
+  
+  .nav li a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      line-height: 1.5;
+      padding: 26.5px;
+      @include pad{
+        padding: 15px 0 ;
+      }
+      @include mobile{
+        padding: 0px;
+        padding: 6px 0 ;
+      }
+      h3{
+        font-size: 32px;
+        line-height: 1.5;
+        color: #000;
+        @include pad{
+          font-size: 24px;
+          line-height: 50px;
+        }
+        @include mobile{
+          font-size: 14px;
+          line-height: 1;
+        }
+    }
+  }
+  
+  .active{
+    border-bottom: 8px solid $primary !important;
+    @include mobile{
+      border-bottom: 4px solid $primary !important;
+    }
+  }
+
+  .pagination{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .page_num{
+    display: flex;
+    li{
+      a{
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 12px 16px ;
+        border: solid 1px #000;
+        color: black;
+        &:hover{
+          background-color: #000;
+          color: white;
+          &:not(.pageBtn){
+            background-color: $page;
+            color: black;
+          }
+        }
+        @include mobile{
+          padding: 10px 12px ;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  
+  .pageBtn{
+    font-size: 19px;
+    line-height: 1.5;
+    background-color: $page;
+    color: black;
+    a{
+      padding: 12px 12px;
+      @include mobile{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px 12px;
+      }
+    }
+  }
+  
+  .siteCard{
+    width: 31.5%;
+    margin-right: 30px;
+    margin-bottom: 32px ;
+    &:nth-child(3n+3){
+        margin-right: 0;
+      }
+    &:nth-last-child(1),&:nth-last-child(2){
+      margin-bottom: 0;
+    }
+    @include pad{
+      width: 46%;
+      &:nth-child(even){
+        margin-right: 0px;
+      }
+    }
+    @include mobile{
+      width: 100%;
+      margin-right: 0px;
+      &:nth-last-child(2){
+      margin-bottom: 32px;
+     }
+    }
+    img{
+      width: 100%;
+      height:224px;
+      @include pad{
+        height: auto;
+      }
+      @include mobile{
+        margin-right: 0;
+      }
+    }
+  }
+  
+  
+  .sitecardBody{
+    width: 100%;
+    h3{
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 12px 24px;
+    border: 1px solid $shadow-color ;
+    @include pad{
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 8px 16px;
+    }
+   }
+  }
+  
+  .sitecardBody ul{
+    padding: 16px 26px;
+    border: 1px solid $shadow-color ;
+    @include pad{
+      padding: 16px 24px;
+    }
+    li{
+      &:nth-child(1),&:nth-child(2){
+        margin-bottom: 8px;  
+      }
+      
+    }
+  }
+  
+  .sitecardBody a{
+    display: flex;
+    align-items: center;
+    color: black;
+    img{
+      margin-right: 10px;
+      @include size(18px,18px);
+        }
+    p{
+      font-size: 20px;
+      line-height: 30px; 
+      @include pad{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+  
+  
+  .sitecardBody .locationBtn{
+      justify-content: center;
+      font-size: 19px;
+      line-height: 1.5;
+      padding: 20px 0;
+      background-color: #000;
+      color: white;
+    }
