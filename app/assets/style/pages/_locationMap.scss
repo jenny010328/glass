@@ -8,30 +8,31 @@
   
   
 .sitecardCenter{
-width: 40%;
-@include pad{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 0;
-    margin-right: 0;
-}
-@include mobile{
-    flex-direction: column;
-    &:nth-last-child(2){
-    margin-bottom: 0px;
-    }
-}
-img{
+    width: 40%;
     @include pad{
-    width: 50%;
-    margin-right: 30px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: 0;
     }
     @include mobile{
-    width: 100%;
-    margin-right: 0;
+        width: 100%;
+        flex-direction: column;
+        &:nth-last-child(2){
+        margin-bottom: 0px;
+        }
     }
-}
+    img{
+        @include pad{
+        width: 50%;
+        margin-right: 30px;
+        }
+        @include mobile{
+        width: 100%;
+        margin-right: 0;
+        }
+    }
 }
   
 .googleMap {

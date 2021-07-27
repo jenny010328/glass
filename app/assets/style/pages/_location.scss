@@ -96,7 +96,6 @@
     width: 100%;
     height:224px;
     @include pad{
-      width: 100%;
       height: auto;
     }
     @include mobile{
@@ -107,6 +106,7 @@
 
 
 .sitecardBody{
+  width: 100%;
   h3{
   font-size: 24px;
   line-height: 1.5;
