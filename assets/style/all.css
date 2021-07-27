@@ -281,17 +281,19 @@ h2 {
     .nav-phone .menu {
       display: none;
       margin-bottom: 0; } }
-  .nav-phone .menu li:nth-child(1), .nav-phone .menu li:nth-child(2), .nav-phone .menu li:nth-child(3), .nav-phone .menu li:nth-child(4) {
-    margin-right: 28px; }
-    @media (max-width: 768px) {
-      .nav-phone .menu li:nth-child(1), .nav-phone .menu li:nth-child(2), .nav-phone .menu li:nth-child(3), .nav-phone .menu li:nth-child(4) {
-        margin-right: 20px; } }
-  .nav-phone .menu li a {
-    padding: 10px; }
-    .nav-phone .menu li a:hover {
-      background-color: #fff;
-      color: #AA0601;
-      border-radius: 10px; }
+  .nav-phone .menu li {
+    margin-left: 0; }
+    .nav-phone .menu li:nth-child(1), .nav-phone .menu li:nth-child(2), .nav-phone .menu li:nth-child(3), .nav-phone .menu li:nth-child(4) {
+      margin-right: 28px; }
+      @media (max-width: 768px) {
+        .nav-phone .menu li:nth-child(1), .nav-phone .menu li:nth-child(2), .nav-phone .menu li:nth-child(3), .nav-phone .menu li:nth-child(4) {
+          margin-right: 20px; } }
+    .nav-phone .menu li a {
+      padding: 10px; }
+      .nav-phone .menu li a:hover {
+        background-color: #fff;
+        color: #AA0601;
+        border-radius: 10px; }
 
 .contact-method {
   margin-bottom: 24px; }
