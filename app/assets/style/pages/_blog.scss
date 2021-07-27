@@ -1,0 +1,169 @@
+.blogContainer{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 40px 0 160px 0; 
+    @include pad{
+      padding: 32px 39px 96px 39px;
+    }
+    @include mobile{
+      padding: 28px 15px 56px 15px;
+    }
+  }
+  .wrap{
+    background-color: $secondary;
+    @include pad{
+      padding: 0 39px 0 39px;
+    }
+    @include mobile{
+      padding: 0 ;
+    }
+    .blogNav{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1110px;
+      margin: 0 auto;
+      }
+  }
+  
+  .blogMenu{
+      display: flex;
+      @include mobile{
+        flex-wrap: wrap;
+        width:100%;
+      }
+    li{ 
+      margin-left: 28px;
+      &:nth-child(1){
+        margin-left: 0;
+      }
+      @include pad{
+        margin-left: 12px;
+      }
+      @include mobile{
+        margin: 0;
+        text-align: center;
+        outline: 1px solid $secondary;
+        width: 25%;
+      }
+      a{
+        padding: 10px;
+        font-size: 20px;
+        line-height: 1.2;
+        &:hover{
+          background-color: #fff;
+          color: $secondary;
+          font-weight: bold;
+        }
+        @include pad{
+          font-size: 16px;
+          line-height: 1.5;
+        }
+        @include mobile{
+        padding: 16px 0;
+      }
+      }
+    }
+  }
+  
+  .search{
+    @include mobile{
+      display:none;
+    }
+  }
+  
+  .article{
+    display: flex;
+    // color: black;
+    margin-bottom: 60px;
+    @include pad{
+      margin-bottom: 24px;
+    }
+    @include mobile{
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    img{
+      width: 57% ;
+      margin-right: 30px;
+      @include pad{
+        width: 48%;
+      }
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+  
+  
+  
+  
+  .articleDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    .more{
+      text-align: right;
+      font-size: 36px;
+      line-height: 1.5;
+      color:$primary;
+      font-weight: bold;
+      @include pad{
+        font-size: 14px;
+        line-height: 1.5;
+        color: black;
+      }
+      @include mobile{
+        display:none;
+      }
+    }
+  }
+  
+  .articleTitle{
+    h3{
+      font-size: 32px;
+      line-height: 2;
+      font-weight: bold;
+      color: $secondary;
+      @include pad{
+        font-size: 20px;
+      }
+    }
+    
+    .articleTxt{
+      font-size: 20px;
+      line-height: 30px;
+      @include pad{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      @include mobile{
+        display:none;
+      }
+    } 
+  }
+  
+  .articalTag{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @include pad{
+      margin-bottom: 32px;
+      }
+    @include mobile{
+      margin-bottom: 0;
+    }
+    .articleCata{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      p{
+          @include pad{
+          font-size: 14px;
+        }
+      }
+      @include pad{
+        font-size: 16px;
+      }
+      }
+    } 

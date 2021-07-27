@@ -22,10 +22,13 @@
       margin-bottom: 24px;
     }
     h2{
-      width: 192px;
+      text-align: left;
       font-size: 48px;
       line-height: 80px;
       color:#495057;
+      @include mobile{
+        font-size: 28px;
+      }
     }
   }
 
