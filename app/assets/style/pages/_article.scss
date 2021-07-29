@@ -153,6 +153,9 @@
     &:nth-last-child(1),&:nth-last-child(2){
         margin-bottom: 0;
       }
+    @include mobile{
+      margin-bottom: 0;
+    }
     a{
       font-weight: bold;
       color: $primary;
@@ -205,6 +208,7 @@ hr{
   justify-content: space-between;
   @include mobile{
     flex-direction: column;
+    margin-bottom: 22px;
   }
   a{
     align-items: center;
@@ -218,6 +222,9 @@ hr{
     @include pad{
       font-size: $fz-2;
     }
+    @include mobile{
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -225,6 +232,7 @@ hr{
   @include mobile{
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-bottom: 0;
   }
 }
           
