@@ -67,14 +67,14 @@
       a{
           display: flex;
           align-items: center;
-          font-size: 36px;
+          font-size: $fz-9;
           line-height: 1.5;
           @include pad{
-          font-size: 20px;
+          font-size: $fz-3;
           line-height: 1.5;
           }
           @include mobile{
-          font-size: 16px;
+          font-size: $fz-2;
           }
           // 疑問: 不知道為何這裡hover用#AA06010D這個顏色顯示不出來
           // 我的變數設: $tertiary
@@ -117,7 +117,7 @@
   }
   
   hr{
-    border: solid 1px  white;
+    border: solid 1px  $white;
     //去除hr間隙
     border-bottom: 0px;
     border-left: 0px;
@@ -129,9 +129,9 @@
   
   .copyright{
     p{
-      color: white;
+      color: $white;
       @include mobile{
-        font-size: 14px;
+        font-size: $fz-1;
         line-height: 1.5;
         margin-bottom: 8px;
       }

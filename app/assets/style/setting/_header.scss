@@ -50,15 +50,15 @@
         @include mobile{
           margin: 0;
           text-align: center;
-          outline: 1px solid #fff;
+          outline: 1px solid $white;
           width: 50%;
         }
         a{
           padding: 10px;
-          font-size: 20px;
+          font-size: $fz-3;
           line-height: 1.5;
           &:hover{
-            background-color: #fff;
+            background-color: $white;
             color: $primary;
             border-radius: 10px;
           }
@@ -91,7 +91,7 @@
       @include mobile{
         margin: 0;
         text-align: center;
-        outline: 1px solid #fff;
+        outline: 1px solid $white;
         width: 50%
       }
     }

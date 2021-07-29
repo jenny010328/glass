@@ -1,0 +1,230 @@
+.articleContainer{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 8px 0 160px 0; 
+    @include pad{
+      padding: 8px 39px 96px 39px;
+    }
+    @include mobile{
+      padding: 8px 15px 56px 15px;
+    }
+  }
+
+.articleBreadCrumbs {
+  display: flex;
+  margin-bottom: 8px;
+  @include pad{
+    font-size: $fz-1;
+  }
+  li{
+    padding-left: 10px;
+    &:nth-child(1){
+      padding-left: 0;
+    }
+    a{
+      color: $black-800;
+    }
+  }
+  .breadActive{
+      color: $primary;
+      font-weight: bold;
+  }
+}
+
+.article{
+  display: flex;
+  justify-content: space-between;
+   @include mobile{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.articleInfo{
+  width: 74%;
+  margin-right: 30px;
+  @include pad{
+    width: 67%;
+  }
+  @include mobile{
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+
+.articleTitle{
+    color: $black-800;
+    font-size: $fz-10;
+    line-height: 1.5;
+    @include pad{
+    font-size: $fz-7;
+    }
+    @include mobile{
+    color: $secondary;
+    }
+  }
+    
+.articleSubtitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  .articleCata{
+    font-size: $fz-5;
+    line-height: 1.5;
+    @include pad{
+      font-size: $fz-2;
+    }
+    p{
+      @include pad{
+        font-size: $fz-2;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+
+.articleItem{
+  margin-bottom: 40px;
+  @include pad{
+    margin-bottom: 24px;
+  }
+  img{
+    margin-bottom: 24px;
+    @include pad{
+      margin-bottom: 16px;
+    }
+  }
+  p{
+    font-size: $fz-3;
+    line-height: 1.5;
+    color: rgba(#0A0A0A,0.6);
+    @include pad{
+      font-size: $fz-2; 
+      line-height: 1.5;
+    }
+  }
+}
+
+
+//// 側欄
+.TagsSidebar{
+  width: 23% ; 
+  color: $primary;
+  @include pad{
+    width: 30%;
+  }
+  @include mobile{
+    width: 100%;
+  }
+}
+
+
+.sidebarTitle{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  img{
+    @include size(38px,28px);
+    @include pad{
+       @include size(19px,14px);
+    }
+  }
+  h3{
+    font-size: $fz-5;
+    line-height: 1.5;
+    @include pad{
+      font-size: $fz-3;
+    }
+  }
+}
+
+
+.articleTags {
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    display: flex;
+    margin-bottom: 8px;
+    &:nth-last-child(1),&:nth-last-child(2){
+        margin-bottom: 0;
+      }
+    a{
+      font-weight: bold;
+      color: $primary;
+      font-size: $fz-4;
+      line-height: 1.5;
+      margin-right: 24px;
+      @include pad{
+        font-size: $fz-2;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.articleShare{
+  display: flex;
+  align-items: center;
+  margin: 9px 0 21px 0;
+  li {
+    margin-right: 20px;
+    img{
+      width: 100%;
+      height: auto;
+      @include size(24px,24px);
+      @include pad{
+      @include size(20px,20px);
+    }
+  }
+    .share{
+      color: $black-800;
+      font-weight: bold;
+      font-size: $fz-3;
+      line-height: 1.5;
+      @include pad{
+        font-size: $fz-2;
+      }
+    }
+  }
+}
+
+
+hr{
+  border-top: solid 1px $gray-700;
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+.articleFooterNav{
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+    flex-direction: column;
+  }
+  a{
+    align-items: center;
+    color: $black-800;
+    display: flex;
+    font-size: $fz-3;
+    line-height: 1.5;
+    img{
+      @include size(16px,16px);
+    }
+    @include pad{
+      font-size: $fz-2;
+    }
+  }
+}
+
+.after{
+  @include mobile{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+          

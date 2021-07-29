@@ -1,5 +1,5 @@
-.qa h3{
-    font-size: 32px;
+.faq h3{
+    font-size: $fz-7;
     line-height: 2;
     font-weight: bold;
     margin-bottom: 36px;
@@ -17,27 +17,27 @@
     margin-bottom: 24px;
     }
     h4{
-    font-size: 20px;
+    font-size: $fz-3;
     line-height: 1.1;
     font-weight: bold;
     margin-bottom: 16px;
-    @inclde mobile {
-    font-size: 16px;
+    @include mobile {
+    font-size: $fz-2;
     line-height: 1.5;
     margin-bottom: 8px;
     }
-}
-p{
-    font-size: 16px;
-    line-height: 1.5;
-    margin-left: 95px;
-    @include pad{
-        margin-left: 50px;
-    }
-    @include mobile{
-        font-size: 14px;
+    p{
+        font-size: $fz-2;
         line-height: 1.5;
-        margin-left: 0;
-    }
+        margin-left: 95px;
+        @include pad{
+            margin-left: 50px;
+        }
+        @include mobile{
+            font-size: $fz-1;
+            line-height: 1.5;
+            margin-left: 0;
+        }
+        }
     }
 }
