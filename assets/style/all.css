@@ -539,13 +539,13 @@ h2 {
         width: 24px;
         height: 24px; } }
 
-hr {
+.footer hr {
   border: solid 1px #FFF;
   border-bottom: 0px;
   border-left: 0px;
   margin-bottom: 32px; }
   @media (max-width: 768px) {
-    hr {
+    .footer hr {
       margin-bottom: 16px; } }
 
 .copyright p {
@@ -1544,7 +1544,7 @@ hr {
         .articleShare li .share {
           font-size: 16px; } }
 
-hr {
+.articleContent hr {
   border-top: solid 1px #707070;
   border-bottom: 0px;
   border-left: 0px; }
