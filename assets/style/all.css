@@ -1401,15 +1401,18 @@ hr {
       width: 100%;
       margin-right: 0; } }
 
-.articleTitle {
+.articleTitle h2 {
   color: #0A0A0A;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-bottom: 0;
   font-size: 48px;
   line-height: 1.5; }
   @media (max-width: 768px) {
-    .articleTitle {
+    .articleTitle h2 {
       font-size: 32px; } }
   @media (max-width: 414px) {
-    .articleTitle {
+    .articleTitle h2 {
       color: #650300; } }
 
 .articleSubtitle {
