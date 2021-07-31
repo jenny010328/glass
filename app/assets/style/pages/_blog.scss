@@ -68,9 +68,10 @@ li{
 }
 
 .search{
-@include mobile{
-display:none;
-}
+  cursor:pointer;
+  @include mobile{
+  display:none;
+  }
 }
 
 .blogItem{
@@ -99,73 +100,74 @@ margin-right: 30px;
 
 
 .blogWrap{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 100%;
-.more{
-text-align: right;
-font-size: $fz-9;
-line-height: 1.5;
-color:$primary;
-font-weight: bold;
-@include pad{
-  font-size: $fz-1;
-  line-height: 1.5;
-  color: $black-800;
-}
-@include mobile{
-  display:none;
-}
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .blogTitle{
-h3{
-font-size: $fz-7;
-line-height: 2;
-font-weight: bold;
-color: $secondary;
-@include pad{
-  font-size: $fz-3;
-}
-}
+  h3{
+    font-size: $fz-7;
+    line-height: 2;
+    font-weight: bold;
+    color: $secondary;
+    @include pad{
+      font-size: $fz-3;
+    }
+  }
 }
 
 .blogSubTitle{
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-bottom: 24px;
-@include pad{
-margin-bottom: 32px;
-}
-@include mobile{
-margin-bottom: 0;
-}
-.blogCata{
-font-weight: bold;
-font-size: $fz-3;
-line-height: 30px;
-p{
-    @include pad{
-    font-size: $fz-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  @include pad{
+    margin-bottom: 32px;
   }
+  @include mobile{
+    margin-bottom: 0;
+  }
+.blogCata{
+  font-weight: bold;
+  font-size: $fz-3;
+  line-height: 30px;
+  p{
+      @include pad{
+      font-size: $fz-1;
+    }
 }
-@include pad{
-  font-size: $fz-2;
- }
- }
+    @include pad{
+      font-size: $fz-2;
+    }
+  }
 } 
 
 .blogIntro{
-font-size: $fz-3;
-line-height: 1.5;
-@include pad{
-  font-size: $fz-1;
+  font-size: $fz-3;
   line-height: 1.5;
-}
-@include mobile{
-  display:none;
-}
+  @include pad{
+    font-size: $fz-1;
+    line-height: 1.5;
+  }
+  @include mobile{
+    display:none;
+  }
 } 
+
+.more{
+  text-align: right;
+  font-size: $fz-9;
+  line-height: 1.5;
+  color:$primary;
+  font-weight: bold;
+  @include pad{
+    font-size: $fz-1;
+    line-height: 1.5;
+    color: $black-800;
+  }
+  @include mobile{
+    display:none;
+  }
+}
